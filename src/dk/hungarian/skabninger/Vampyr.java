@@ -36,6 +36,7 @@ public class Vampyr extends Skabning implements Lookable {
     }
     public void transformerTilbage(){
         System.out.println(getNavn() + " har forvandlet sig tilbage til en vampyr.");
+
     }
 
 }
