@@ -1,4 +1,4 @@
-package dk.hungarian;
+/*package dk.hungarian;
 
 
 import java.sql.Connection;
@@ -55,3 +55,4 @@ public class Leaderboard {
 
 
 
+*/

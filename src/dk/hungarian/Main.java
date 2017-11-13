@@ -21,7 +21,7 @@ public class Main {
     /* Main classen starter spillet, og bringer alle de andre klasser i spil. */
     public static void main(String[] args) {
 
-        Connection con = Leaderboard.connect();
+        //Connection con = Leaderboard.connect();
 
         if (DEBUG) {
             player = new Player("Hans");
