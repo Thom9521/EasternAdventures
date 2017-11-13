@@ -83,4 +83,6 @@ public class Player {
     public void setPoint(int point) {
         this.point = point;
     }
+
+    public void savePoint() {}
 }

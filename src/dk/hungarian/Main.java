@@ -9,6 +9,7 @@ import dk.hungarian.skabninger.SurMor;
 import dk.hungarian.skabninger.Normie;
 import dk.hungarian.skabninger.Scammer;
 
+import java.sql.Connection;
 import java.util.Scanner;
 
 public class Main {
@@ -20,7 +21,7 @@ public class Main {
     /* Main classen starter spillet, og bringer alle de andre klasser i spil. */
     public static void main(String[] args) {
 
-
+        Connection con = Leaderboard.connect();
 
         if (DEBUG) {
             player = new Player("Hans");
@@ -63,6 +64,8 @@ public class Main {
             }
             if (svarTilBruger != "") System.out.println(svarTilBruger);
         }
+
+
     }
 
     private static String lookAtThings() {

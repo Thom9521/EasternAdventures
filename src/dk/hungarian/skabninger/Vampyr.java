@@ -13,7 +13,7 @@ public class Vampyr extends Skabning implements Lookable {
         this.hugtændersStørrelse = hugtændersStørrelse; //Tilføjer min egen variabel til constructoren
     }
 
-    public Vampyr(int hugtændersStørrelse){ //Constructor fra Skabning, hvor jeg har tilføjet min eget variabel.
+    public Vampyr(int hugtændersStørrelse) { //Constructor fra Skabning, hvor jeg har tilføjet min eget variabel.
         super("Vampyr", "Et fjendligt væsen, som angriber med sine farlige hugtænder, " +
                         "hvis du kommer for tæt på",
                 70, Gender.HERMAFRODIT);
@@ -21,15 +21,21 @@ public class Vampyr extends Skabning implements Lookable {
     }
 
     @Override
-    public String toString(){ //Metode til at opsamle det hele.
+    public String toString() { //Metode til at opsamle det hele.
         return "En " + this.getNavn() + " er dukket op. Du tjekker din pokédex for at finde en beskrivelse: \n"
                 + this.getBeskrivelse() + ".\nDen har en styrke på " + this.getStyrke() + " med nogle store " +
                 "hugtænder på " + this.hugtændersStørrelse + " cm. (WutFace)";
     }
 
-    public String look(){
+    public String look() {
         return this.toString();
-}
+    }
 
+    public void transformer() {
+        System.out.println(getNavn() + " har forvandlet sig til en flagermus.");
+    }
+    public void transformerTilbage(){
+        System.out.println(getNavn() + " har forvandlet sig tilbage til en vampyr.");
+    }
 
 }

@@ -25,5 +25,12 @@ int levetid; //Kan lyse fra 0-100 sekunder.
     public String look(){
         return this.toString();
     }
+
+    public void tænd() {
+        System.out.println(getNavn() + " er tændt.");
+    }
+    public void sluk(){
+        System.out.println(getNavn() + " er gået ud.");
+    }
 }
 
